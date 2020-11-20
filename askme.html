@@ -1,0 +1,115 @@
+
+<html>
+
+    <head>
+        <title>Ask.Me | Codewithsharen Login Vaildation with JavaScript Project #4</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Asset|Baumans|Fredoka+One|Raleway|Righteous|Rum+Raisin&display=swap"
+            rel="stylesheet">
+        <style>
+            @import url(https://fonts.googleapis.com/css?family=Asset|Raleway&display=swap);    
+            html {
+                background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(https://www.fishpools.co.uk/blog/wp-content/uploads/2019/01/adult-affection-beard-842546-759x500.jpg) no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            } 
+            div.container {
+                width: 900px;
+                height: 610px;
+                margin-left: 35%;
+                font-family: 'Raleway', sans-serif;
+            }
+    
+            div.main {
+                width: 400px;
+                padding: 10px 50px 25px;
+                border: 2px solid #fff;
+                box-shadow: 10px 10px 10px black;
+                border-radius: 10px;
+                font-family: raleway;
+                float: left;
+                margin-top: 150px;
+                background-color: white;
+            }
+            h2 {
+                padding: 30px 35px;
+                margin: -10px -50px;
+                text-align: center;
+                border-radius: px 10px 0 0;
+                color: #000;
+                font-size: 3.5rem;
+                font-family: 'Rum Raisin', sans-serif;
+                text-shadow: 1px 1px 1px black;
+                letter-spacing: 4px;
+            }
+    
+            input[type=text],
+            input[type=password] {
+                width: 100%;
+                height: 40px;
+                padding: 5px;
+                margin-bottom: 25px;
+                margin-top: 5px;
+                border: 2px solid grey;
+                color: #000;
+                font-size: 16px;
+                border-radius: 5px;
+            }
+    
+            label {
+                color: #000;
+                text-shadow: 0 1px 0 #fff;
+                font-size: .8rem;
+                letter-spacing: 2px;
+                text-shadow: .5px .5px .5px black;
+            }
+    
+            #results {
+                text-shadow: .2px .2px .2px black;
+                letter-spacing: 2px;
+            }
+    
+            input[type=button] {
+                font-size: 16px;
+                font-family: 'Baumans', cursive;
+                background: linear-gradient(#ffbc00 90%, #ffdd7f 100%);
+                border: 1px solid #e5a900;
+                cursor: pointer;
+                width: 100%;
+                border-radius: 5px;
+                padding: 10px 0;
+                outline: none;
+                box-shadow: 1px 1px 1px black;
+                font-size: 1.5rem;
+                color: #000;
+                text-shadow: .5px .5px .5px black;
+                letter-spacing: 2px;
+            }
+    
+            input[type=button]:hover {
+                background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="main">
+                <h2> Ask.Me</h2>
+                <form id="form_id" method="post" name="myform">
+                    <label>Username:</label>
+                    <input type="text" name="username" id="username" placeholder="Username" />
+                    <label>Password:</label>
+                    <input type="password" name="password" id="password" placeholder="Password" />
+                    <input type="button" value="Login" onclick="validate()" /><br><br>
+                    <span id="results"></span>
+                </form>
+            </div>
+        </div>
+        <script>
+             var attempt = 3; // Variable to count number of attempts.
+        </script>
+    </body>
+    </html>
